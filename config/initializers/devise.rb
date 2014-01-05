@@ -6,6 +6,9 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   config.secret_key = Settings.devise_secret_key
 
+  # The default HTTP method used to sign out a resource. Default is :delete.
+  config.sign_out_via = :get
+
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
